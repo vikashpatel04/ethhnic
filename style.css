@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;   
+}   
+body{
+    font-family: 'Poppins', sans-serif;
+    background: #000000;
+    color: #f4f4f4;
+
+}
+main{
+    min-height: 100vh;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    background-color: #000000;
+    font-size: 1.3rem;
+    
+}
+nav ul{
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+}
+nav ul li{
+    list-style: none;
+}
+nav ul li:hover{
+    text-shadow: 0 0 20px #f4f4f4;
+    transition: 0.2s;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #f4f4f4;
+    font-weight: 600;
+    /* letter-spacing: 1px; */
+    /* font-size: 14px; */
+}
+.hero{
+    height: 92vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.hero h1{
+    font-size: 4.5rem;
+    font-weight: 800;
+    letter-spacing: 2px;
+    /* text-align: center; */
+}
+.hero p{
+    font-size: 1.5rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin-bottom: 30px;
+    /* text-align: center; */
+}
+.hero a{
+    text-decoration: none;
+    color: #f4f4f4;
+    background-color: #241c1c;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    transition: 0.2s;
+}
+.hero a:hover{
+    border: solid #f4f4f4 1px;
+    color: #ffffff;
+    transition: 0.2s;
+}
+.hero_img{
+    border: solid #f4f4f4 1px;
+    
+}
+.about{
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    flex-direction: column;
+    /* height: 100vh; */
+    width: 100%;
+}
+.about_text{
+    width: 50%;
+    text-align: center;
+}
+.about h2{
+    font-size: 3.5rem;
+    font-weight: 800;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    text-align: center;
+}
+.about p{
+    font-size: 1.5rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin-bottom: 30px;
+    padding: 0 10%;
+    text-align: center;
+    width: 100%;
+}
+
+
+.profile_p{
+    font-family: 'Inter', sans-serif;
+    font-size: 1.1em;
+    color: #475569;
+    margin-top: 15px;
+    text-align: center;
+    width: 27%;
+    line-height: 2em;
+}
+.profile_wrapper{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: inherit;
+    gap: 20px;
+    margin: 40px 30px 30px 30px;
+}
+.profile{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    flex-direction: column;
+}
+.name_tag{
+    font-family: 'Poppins', sans-serif;
+    font-size: .8em;
+    background-color: #ffffff;
+    padding: 5px 10px;
+    border-radius: 15px;
+    width: 80%;
+    text-align: center;
+    position: relative;
+    filter: drop-shadow(0 0 30px #acaaaa);
+    transform: rotate(3deg);
+    color: #000000;
+}
+.name_tag p{
+    font-size: 14px;
+    color: #71717A;
+}
+.profile_img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 5px solid #ececec;
+    background-color: #94D3DCE8;
+}
+.name_tag::after{
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid #ffffff;
+}
+.profile_img_lead{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    border: 5px solid #ececec;
+    background-color: #FFC224E8;
+}
+.profile:hover .name_tag {
+    transform: rotate(0deg);
+    transition: all 0.3s ease-in-out;
+    filter: drop-shadow(0 0 40px #afadad);
+    cursor: default;
+}
+.profile_img:hover{
+    cursor: pointer;
+} 
+.profile_img_lead:hover {
+    cursor: pointer;
+}
+.p1{
+    background-image: url(./assets/Vikash\ Profile\ Photo.jpg);
+    background-position: center;
+    background-size: cover;
+    left: 10px;
+}
+.p2{
+    background-image: url(./assets/la.jpg);
+    background-position: center;
+    background-size: cover;
+    left: 10px;
+}
+.p3{
+    background-image: url(./assets/pa.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.p4{
+    background-image: url(./assets/aakash.jpg);
+    background-position: center;
+    background-size: cover;
+    left: 10px;
+}
+.p5{
+    background-image: url(./assets/images/5.jpg);
+}
+.p6{
+    background-image: url(./assets/poo.jpg);
+    background-position: center;
+    background-size: cover;
+
+}
+
+.meetteam{
+    margin: 10px 0;
+    font-size: 3.4rem;
+    text-align: center;
+}
